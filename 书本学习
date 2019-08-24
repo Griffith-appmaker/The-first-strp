@@ -1,0 +1,40 @@
+name='griffith'
+print(name,"\nhello,it\'s nice to meet you".upper())
+print(name.upper())
+print(name.lower())
+print(name.title())
+name2='jessica  '
+print(name2)
+name2=name2.rstrip()
+print(name2)
+name3=' tony '
+print('\t',name3.title(),"\n\tnice to meet you again my friend".title())
+print('\t',name3.lstrip().title(),"\n\tnice to meet you again my friend".title())    
+print('\t',name3.title(),"\n\t nice to meet you again my friend".title())
+
+在上述文本中练习了书本第一张的 大小写，换行，删除空格等功能
+明确了：使用 \t+变量的时候，\t要用引号括起，且后面要加逗号
+引用变量不需要用引号括起来，变量后面要加括号
+不同的方法可以叠加使用（line12）
+
+问题：用逗号链接不同的代码块会造成空格，用+替代line11~13中'\t'后面的逗号即可解决这个问题
+
+num1=8
+num2=9
+sum=num1+num2
+print('the sum of',str(num1),'and',str(num2),'is',str(sum)) 
+
+了解了不同字符串类型的基本转换及方法——转化加函数，并且不需要引号，但是前面需要逗号（带有一个字符的空格）/加号
+
+
+a='griffith'
+b='meijia'
+family1=[a,b]
+family2=['griffith','meijia']
+print('family list:',family1)
+print('family list:',family2)
+message='my lover is '+family2[1].title()+'.'
+print(message)
+
+了解了列表的格式（【xxx】），如何引用以及后续加函数的方法
+
