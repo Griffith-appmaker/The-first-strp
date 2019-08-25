@@ -38,3 +38,61 @@ print(message)
 
 了解了列表的格式（【xxx】），如何引用以及后续加函数的方法
 
+family=['griffith','meijia']
+print(family)
+family.append('yaya')
+print(family)
+family.insert(3,'jeoge')
+print(family)
+kid1=family.pop()
+print(kid1)
+kid2=family.pop()
+print(kid2)
+kids=[kid1,kid2]
+print(family)
+print(kids)
+
+了解了关于列表的添加，删除的操作
+drinks=['coke','juice','wine','beer']
+print(drinks)
+print(sorted(drinks))
+print(sorted(drinks,reverse=True))
+print(sorted(drinks,reverse=False))
+print(drinks)
+drinks.reverse()
+print(drinks)
+drinks.reverse()
+print(drinks).reverse
+
+reverse函数的使用是直接使用的，放到一个print模块里面去的话，需要写出reverse=True这类表述
+
+for value in range(1,21):
+    print(value)
+numbers=list(range(1,21))
+print(numbers)
+squares=[g*g for g in range(2,101,2)]
+print(squares)
+
+使用列表解析会快很多；for value in range(xxx)是一个循环，所以下面的print需要做好缩进，并且上面的for xxx需要有冒号
+
+users=['griffith','jay','ray','tommy','jessica']
+if users:
+    for user in users:
+        if user=='griffith':
+            print('hello',user,'welcome home.')
+        else:
+            print('hello',user,'welcome to griffith\'home')
+else:
+    print('There\' no user here')
+#尝试列表为空，看看是否会报错
+users2=[]
+if users2:
+    for user2 in users2:
+        if user2=='griffith':
+            print('hello',user2,'welcome home.')
+        else:
+            print('hello',user2,'welcome to griffith\'home')
+else:
+    print('\nThere\' no user here')
+    
+上述函数中用if判断一个函数是否为空，如果是空的，会返回false，然后跳到else那里
