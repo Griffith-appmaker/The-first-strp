@@ -96,3 +96,15 @@ else:
     print('\nThere\' no user here')
     
 上述函数中用if判断一个函数是否为空，如果是空的，会返回false，然后跳到else那里
+
+users=['griffith','ray','jay','jessica','tommy']
+users_new=['Griffith','Admin','Meimei','Tommy','Robot']
+for user in users_new:
+    if user.lower() in users:
+        print(user,' has been used,please pick uo a new one.')
+    else:
+        print(user,' can be used,welcome to Game Of Throne')
+模拟——现实中用户注册的姓名与已有姓名是否一致的情况
+
+
+
