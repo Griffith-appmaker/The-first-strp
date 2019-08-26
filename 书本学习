@@ -106,5 +106,82 @@ for user in users_new:
         print(user,' can be used,welcome to Game Of Throne')
 模拟——现实中用户注册的姓名与已有姓名是否一致的情况
 
+#尝试使用prompt函数，while循环
+prompt='Print a number and I will count it\'s square for you'
+prompt+='\nPrint \'exit\' to stop the program'
+number=' '
+while number != 'exit':
+    number=input('please enter a number: ')
+    if number !='exit':
+        answer=int(number)**2
+        print('The square of',number,'is:',answer)
+
+#尝试将while的条件判断更改为标志
+prompt='Print a number and I will count it\'s square for you'
+prompt+='\nPrint \'exit\' to \'quit\' stop the program'
+number=' '
+HIT= True
+print(prompt)
+while HIT:
+    number = input('please enter a number: ')
+    if (number=='exit') or (number=='quit'):
+        HIT=False
+    else:
+        answer=int(number)**2
+        print('The square of',number,'is:',answer)
+        
+  
+        
+    
+
+
+
+
+    
+love_information={'name':'李美嘉','favourite food':'meat','major':'human resource','age':22}
+print('My wife\'s name is:'+love_information['name'])
+print('My wife\'s favourite food is:'+love_information['food'])
+love_information['weight']='100kg'
+print(love_information)
+love_information['age']=21
+del love_information['favourite food']
+print(love_information)
+
+#尝试使用了字典的操作，发现了如下没注意的问题
+#首先是字典的值只有字符串才需要引号，数字是不要的（之前错误地给年龄赋值为 ‘21’,在打印的时候会将引号打印出来）
+#给字典的键赋值的时候也是同理
+#接下来尝试打印这个列表
+for a,b in love_information.items():
+    print('\nKey:'+a)
+    print('Value:'+str(b))
+print('thank you for using griffith\'s dictionary')
+
+for a in love_information:
+    if a=='name' or a=='major':
+        print(a,' is a important information')
+    else:
+        print(a)
+（上述代码块 添加 keys()函数时结果不变，for 函数默认打印键名，用items才会打印键-值）
+    
+
+#尝试用items函数但是不打印全部
+for a in love_information.items():
+    print('\nKey:'+str(a))
+print('thank you for using griffith\'s dictionary')
+会全部打印出来
+
+family_information={'griffith':{'age':21,'birthday':10.11,'skill':'python'},
+                    'meijia':{'age':21,'birthday':12.3,'skill':'human resource'},
+                    'yaya':{'age':1,'birthday':11.3,'skill':'swimming'},
+                    'jeoge':{'age':3,'birthday':11.3,'skill':'climming'}}
+for name,information in family_information.items():
+    print('\nName:'+name.title())
+    age=str(information['age'])
+    birthday=str(information['birthday'])
+    skill=information['skill']
+    print('Age:',age,'\nBirthday:',birthday,'\nSkill:',skill.title())
+print('\nThat\'s all information of our family.')
+字典嵌套字典的例子
+
 
 
