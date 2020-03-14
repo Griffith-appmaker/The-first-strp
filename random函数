@@ -1,0 +1,5 @@
+#>>在给定范围内生成随机数
+print random.randint(1,50)
+
+#>>在列表或元组中选择任意数
+random.choice(['a','b','c'])
