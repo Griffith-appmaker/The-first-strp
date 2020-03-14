@@ -1,0 +1,12 @@
+a=0
+while a < 2:
+    b = input('输入2')
+    if b == '2':
+        print('成果')
+        break
+    else:
+        a=a+1
+        print('失败了再来一次')
+else:
+    print('你失败了')
+#>>注意：在while函数后面直接接的else条件，只会在while函数条件不符合后跳出时触发，如果while函数是通过用户设置的条件break跳出的，那么就不会触发else
