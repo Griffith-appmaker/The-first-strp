@@ -1,12 +1,18 @@
 list1=[2,4,6]
 list2=[1,5,9]
 
-#列表合并
+#>>列表合并
 new_list = list1 + list2		#使用+直接将两个列表合并为一个新列表，旧列表存在
 # 亦可以使用extend()函数    list1.extend(list2)，此时新列表直接覆盖原list1
 
-print(new_list)		#>>直接排序的结果
+#>>列表排序
+print(new_list)		
 new_list.sort()		#使用sort.()进行排序，默认升序（False）
 print(new_list)
 new_list.sort(reverse=True)		#使用sort.(reverse=True)进行降序排序
 print(new_list)
+
+
+#>>列表增加元素
+list1.append('a')
+#append函数一次只能增加一个元素
