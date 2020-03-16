@@ -1,0 +1,22 @@
+#>>创建类
+
+# 类名首字母大写
+class Chinese:
+    # 用赋值语句，创建类的属性
+    eye = 'black'
+
+    # 创建实例方法时，不要漏了 self
+    def eat(self):
+        print('吃饭，选择用筷子。')
+        
+#>>调用类
+class Computer:
+
+    screen = True
+
+    def start(self):
+        print('电脑正在开机中……')
+
+my_computer = Computer()
+print(my_computer.screen) #获取my_comuter的类属性，并打印出来
+my_computer.start() #调用my_computer类的方法
