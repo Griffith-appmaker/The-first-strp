@@ -3,10 +3,14 @@
 
 while True:
     try:
-        age = int(input('你今年几岁了？'))
+        age = int(input('你今年几岁了？'))    #>>注意这里的input函数是在try后面缩进的，而不是跟try平行
         break
     except ValueError:  # 如果出现格式错误，运行下面的内容，并且没有打破while循环，实现继续要求用户输入的功能
         print('你输入的不是数字！')
-
+#>>当有多个错误想同时归纳在一起时，可以 except (a,b):
 if age < 18:
     print('不可以喝酒噢')
+
+   # 方式3：常规错误的基类，假设不想提供很精细的提示，可以用这个语句响应常规错误。
+    # except Exception:
+    #     print('你的输入有误，请重新输入！')
